@@ -66,7 +66,7 @@ O site se adapta automaticamente a diferentes tamanhos de tela:
 
 ### 🖥️ Opção 1 — Clonando o Repositório e abra o arquivo **index.html**
 ```bash
-git clone https://github.com/SEU-USUARIO/ryhan-codes.git
+git clone https://github.com/RyhZera/Projeto-CardSimples.git
 ```
 
 ### 🌍 📷 Prévia do Projeto
