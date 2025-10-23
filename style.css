@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0e141f, #203258);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/* CARDS DO MEU SITE */
+.card {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* INFOS DO MEU SITE */
+.infos {
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.infos h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.infos h2 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 17px;
+}
+
+.infos p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* FOTO DO MEU SITE */
+.habilidade {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.habilidade li {
+    background: #b1c0e9;
+    color: #00245a;
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.habilidade li:hover {
+    transform: translateY(-8px);
+}
+
+/* FOTO DO MEU SITE */
+.topo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00245a;
+    padding: 30px;
+}
+
+.topo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid white;
+    transition: transform 0.5s ease;
+
+}
+
+.topo img:hover {
+    transform: translateY(-8px);
+}
+
+
+/* BOTAO DO MEU SITE */
+.botao {
+    color: white;
+    font-weight: bold;
+    padding: 9px 19px;
+    border-radius: 17px;
+    background: linear-gradient(90deg, #152c77, #182758);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+    margin-right: 7px;
+}
+
+.botao:hover {
+    background: linear-gradient(135deg, #112a6d, #1851ee);
+    transform: translateY(-4px);
+}
+
+
+/* ANIMAÇÃO DO MEU SITE */
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        /* empilha imagem e texto */
+        max-width: 100%;
+    }
+
+    .topo {
+        padding: 20px;
+    }
+
+    .topo img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .infos {
+        padding: 20px;
+        text-align: center;
+        /* centraliza textos e botões */
+    }
+
+    .habilidade {
+        justify-content: center;
+    }
+
+    .botao {
+        margin: 10px auto;
+        /* centraliza os botões */
+    }
+}
+
+@media (max-width: 480px) {
+    .infos h1 {
+        font-size: 22px;
+    }
+
+    .infos h2 {
+        font-size: 14px;
+    }
+
+    .infos p {
+        font-size: 14px;
+    }
+
+    .topo img {
+        width: 120px;
+        height: 120px;
+    }
+}
